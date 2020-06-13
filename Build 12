@@ -1,0 +1,9 @@
+--moobot commit:
+--Lines added:
+    local boosterAPI = HttpService:GetAsync("https://booster.campfirebot.xyz/65958802742050816/"..player.UserId)
+		local parsed = HttpService:JSONDecode(boosterAPI)
+		local boosted = parsed.booster
+		if boosted == true then
+			tag.Frame.Frame.Change.Disabled = false
+		end
+--Commit end
